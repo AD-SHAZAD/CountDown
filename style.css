@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+    color: white;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    overflow: hidden;    
+    transition: 0.2s;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    transition: 0.2s;
+    /* color: white; */
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.button{
+    width: 90px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 15px;
+    /* left: 10px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.2s;
+}
+.button:hover{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    height: 200px;
+    width: 180px;
+
+}
+.button:hover > .button_default_text{
+    display: none;
+}
+.ul{
+    display: none;
+    /* border: 1px solid cyan; */
+    list-style: none;
+    height: calc( 100% - 40px );
+    width: calc( 100% - 40px );
+    /* overflow-y: scroll; */
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.button:hover .ul{
+    display: flex;
+}
+input{
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-left: 1px solid white;
+    width: 100%;
+    color: white;
+    padding-left: 10px;
+}
+input:focus{
+    outline: none;
+    border-left: 1px solid cyan;
+    color: cyan ;
+}
+.div > span{
+    /* border: 1px solid cyan ; */
+    /* width: 100px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    letter-spacing: 1px;
+}
