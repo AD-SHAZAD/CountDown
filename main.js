@@ -97,6 +97,16 @@ document.getElementById('_modeD').addEventListener('click', () => {
 })
 
 
+document.addEventListener('keydown', (e) => {
+    let key_ = e.key
+    key_ = key_.toLowerCase()
+    if ( key_ == 'n' || key_ == 's' || key_ == 'm' || key_ == 'h' || key_ == 'd'){
+        Select_Mode( key_.toUpperCase())
+    } else {
+        ; // do nothing 
+    }
+})
+
 function Check_( range_ , input_id ){
     let input_number = document.getElementById(input_id).value
     if ( input_number >= range_[0] && input_number <= range_[1]){
